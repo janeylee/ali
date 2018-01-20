@@ -1,0 +1,1039 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Vollkorn', sans-serif;
+    color: #333;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes fade-in-up {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*body {
+    opacity: 0;
+}
+
+.ready {
+    animation: fadein 2s ease-in forwards;
+}
+
+@keyframes fadein {
+    from { opacity:0; transform: translateY(30vh);}
+    to { opacity:1; transform: none; }
+}*/
+
+a {
+    text-decoration: none;
+    transition: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #ff7861;
+    text-decoration: none;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 65px;
+    line-height: 67px;
+    /*letter-spacing: 2px;*/
+}
+
+h2 {
+    font-size: 34px;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 25px;
+    line-height: 32px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 23px;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+hr.whitehr {
+    border-color: #fff;
+    border-top-width: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+hr.pinkhr {
+    border-color: #ff7861;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.p1 {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.p2 {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.nomar {
+    margin: 0;
+}
+
+.nomartop {
+    margin-top: 0;
+}
+
+.nopad {
+    padding: 0;
+}
+
+.nopadleft {
+    padding-left: 0;
+}
+
+.nopadright {
+    padding-right: 0;
+}
+
+.padtb100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.padtb50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.padtb25 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.padtop100 {
+    padding-top: 100px;
+}
+
+.padtop50 {
+    padding-top: 50px;
+}
+
+.padtop25 {
+    padding-top: 25px;
+}
+
+.blackbg {
+    background: #333;
+}
+
+.pinkbg {
+    background: #ff7861;
+}
+
+.pinktext {
+    color: #ff7861;
+}
+
+.whitetext {
+    color: #fff;
+}
+
+.greytext {
+    color: #373f51;
+}
+
+.fontMo {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fw1 {
+    font-weight: 100;
+}
+
+.fw2 {
+    font-weight: 200;
+}
+
+.fw3 {
+    font-weight: 300;
+}
+
+.fw4 {
+    font-weight: 400;
+}
+
+.fw5 {
+    font-weight: 500;
+}
+
+.fw6 {
+    font-weight: 600;
+}
+
+.fw7 {
+    font-weight: 700;
+}
+
+.fw8 {
+    font-weight: 800;
+}
+
+.fw9 {
+    font-weight: 900;
+}
+
+.imgcontainer img {
+    width: 100%;
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    .h1, .h2, .h3, h1, h2, h3 {
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 60px;
+        line-height: 63px;
+    }
+    h2 {
+        font-size: 35px;
+        line-height: 39px;
+    }
+    h3 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .p1 {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .p2 {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .pad15sm {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .pad30sm {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .h1, .h2, .h3, h1, h2, h3 {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 50px;
+        line-height: 53px;
+    }
+    h2 {
+        font-size: 25px;
+        line-height: 34px;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    h4 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .p1 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .p2 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .nopadxs {
+        padding: 0;
+    }
+    .nopadbxs {
+        padding-bottom: 0;
+    }
+    .h1, .h2, .h3, h1, h2, h3 {
+        margin-bottom: 15px;
+    }
+}
+
+/* Real code starts here */
+
+/*#landpage .toppanel .textpanel .col-md-6 {
+    opacity: 0;
+}
+.textup {
+    animation: txtfadein 1s ease-out forwards;
+}
+@keyframes txtfadein {
+    from { opacity:0; transform: translateY(20px);}
+    to { opacity:1; transform: none; }
+}*/
+.justimgbox {
+    padding: 30px;
+}
+.justimgbox .fullpanel {
+    background-size: cover;
+    padding: 6vw;
+    min-height: calc(100vh - 60px);
+}
+.botcaps {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+.toppanel .fullpanel {
+    background-image: url(img/toppanel.jpg);
+    background-position: center;
+}
+/*.toppanel .socialpanel {
+    padding-top: 20px;
+}*/
+.socialpanel img {
+    width: 50px;
+    margin-right: 20px;
+}
+.socialpanel a .hovimg {
+    display: none;
+}
+.socialpanel a:hover .hovimg {
+    display: inline-block;
+}
+.socialpanel a:hover .nonhovimg {
+    display: none;
+}
+.headbord {
+    border-bottom: solid 4px #ffffff;
+    margin-bottom: 60px;
+}
+.seepanel h3 {
+    display: inline-block;
+}
+.seebox {
+    overflow: hidden;
+}
+/*.seebox:before {
+    content: '';
+    position: absolute;
+    width: 109%;
+    height: 89%;
+    margin-left: -45%;
+    background: #fff;
+    opacity: 0.17;
+    transform-origin: left;
+    transform: rotate(-45deg) scale(1.5);
+}*/
+.seebox div {
+    padding: 45px 0 0 45px;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.17) 50%, transparent 50%);
+}
+.seebox p {
+    margin-bottom: 30px;
+}
+.diagpanel img {
+    width: 100%;
+}
+.wherepanel {
+    padding-bottom: 50px;
+}
+.wherepanel .headbord, .beyondpanel .headbord {
+    border-color: #ff7861;
+    display: inline-block;
+}
+.wherebox {
+    padding-left: 0;
+    padding-right: 30px;
+}
+.wherebox h2 {
+    min-height: 60px;
+}
+.wherepanel hr, .aboutintro hr {
+    border-top: solid 2px #ff7861;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    width: 138px;
+    margin-left: 0;
+}
+.bigwhere {
+    padding-bottom: 50px;
+}
+.bigwhere:nth-child(2n+1) {
+    clear: both;
+}
+.trainbox {
+    padding-left: 0;
+    padding-right: 45px;
+}
+.buttype1 {
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    text-decoration: none !important;
+}
+.trainpanel .buttype1 {
+    display: inline-block;
+    margin-top: 75px;
+    color: #fff;
+}
+.buttype1:hover {
+    background: #fff;
+    color: #ff7861;
+}
+/*.diagpanel2 .fullpanel {
+    background-image: url(img/diagnosis-2.jpg);
+    background-position: top;
+}*/
+.beyondpanel .wherebox h3 {
+    margin-bottom: 10px;
+}
+.twoimgpanel img {
+    width: 100%;
+}
+.twoimgpanel .panel1 {
+    padding-left: 0;
+}
+.twoimgpanel .panel1 .botcaps {
+    right: 45px;
+}
+/*.twoimgpanel .panel1 .fullpanel {
+    background-image: url(img/rehearsal.jpg);
+    background-position: top;
+}*/
+.twoimgpanel .panel2 {
+    padding-right: 0;
+    cursor: pointer;
+}
+/*.twoimgpanel .panel2 .fullpanel {
+    background-image: url(img/harmonic.jpg);
+    background-position: center;
+}*/
+.twoimgpanel .panel2 {
+    overflow: hidden;
+}
+.twoimgpanel a {
+    color: inherit;
+}
+.videotext {
+    text-align: center;
+}
+.videotext img, .videotext p {
+    display: inline-block;
+}
+.videotext img {
+    width: 60px;
+    margin-right: 20px;
+}
+.touchpanel.justimgbox .fullpanel, .aboutintro.justimgbox .fullpanel {
+    min-height: initial;
+}
+.touchpanel {
+    padding-top: 0;
+}
+.touchpanel .socialpanel {
+    margin-bottom: 50px;
+}
+.touchpanel p {
+    margin-bottom: 30px;
+}
+.touchpanel p a {
+    color: inherit;
+    text-decoration: none !important;
+    border-bottom: 1px solid #fff;
+}
+.touchpanel p a:hover {
+    color: #ff7861;
+    border-bottom: 1px solid #ff7861;
+}
+.aboutintro {
+    padding-bottom: 0;
+}
+.aboutintro.justimgbox .fullpanel {
+    padding: 6vw 0 0 6vw;
+}
+.aboutintro.justimgbox .imgcontainer {
+    border-right: 30px #fff solid;
+}
+.aboutintro .container div, .aboutdesc .singentry div.rightpan {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.aboutintro p {
+    margin-bottom: 45px;
+    line-height: 32px;
+}
+.aboutintro hr {
+    margin: 55px auto 0;
+}
+.aboutintro .container.padtb100 {
+    padding-bottom: 0;
+}
+.aboutdesc .singentry {
+    padding-bottom: 50px;
+}
+.singentry h4.pinktext {
+    text-transform: uppercase;
+}
+.aboutdesc a p {
+    color: #333;
+    text-decoration: underline !important;
+}
+.aboutdesc a p:hover {
+    color: #ff7861;
+}
+/*.aboutdesc p i {
+    font-size: 13px;
+    line-height: 18px;
+}*/
+#aboutpage .touchpanel p {
+    margin-bottom: 15px;
+}
+
+
+/* Modal Feature */
+body.modal-open {
+    padding-right: initial !important;
+}
+.modal-body {
+    padding: 0;
+}
+.modal-backdrop {
+    /*background-color: rgba(255, 120, 97,0.4);*/
+    animation: modalfader .5s ease-in forwards;
+    opacity: 1 !important;
+}
+@keyframes modalfader {
+    from {background: none;}
+    to {background-color: #ff7861;}
+}
+.modal-content {
+    background: #000;
+    box-shadow: none;
+}
+.modal-content button {
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    opacity: 1;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    -webkit-appearance: none !important;
+    outline: none !important;
+}
+.modal-content button img {
+    height: 100%;
+    width: 100%;
+}
+.modal-content button:hover {
+    opacity: 1;
+}
+
+@media (min-width: 1200px) and (max-width: 1366px) {
+    .container {
+        width: 970px;
+    }
+    .seebox {
+        width: 41.66666667%;
+    }
+    .seebox.col-sm-offset-1 {
+        margin-left: 8.33333333%;
+    }
+    .aboutdesc .singentry {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .aboutdesc .singentry div.rightpan {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .modal-dialog {
+        width: calc((1170px) *0.8);
+        margin: 30px auto;
+    }
+    .modal {
+      text-align: center;
+      padding: 0!important;
+    }
+    .modal:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -4px;
+    }
+    .modal-dialog {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+    }
+}
+
+@media (min-width: 1150px) and (max-width: 1336px) {
+    .twoimgpanel .panel1 .botcaps p {
+        padding-left: 100px;
+    }
+    .aboutintro h1 {
+        font-size: 45px;
+        line-height: 48px;
+        margin-bottom: 17.5px;
+    }
+    .aboutintro h3 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 17.5px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1150px) {
+    .twoimgpanel .panel1 .botcaps p {
+        padding-left: 50px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .seebox div {
+        min-height: 386px;
+    }
+    .touchpanel .col-md-8 {
+        width: 100%;
+    }
+    .wherebox h2 {
+        min-height: 90px;
+    }
+    .container {
+        width: 880px;
+    }
+    .modal-dialog {
+        width: 80%;
+        margin: 20vh auto;
+    }
+    .aboutintro h1 {
+        font-size: 45px;
+        line-height: 48px;
+        margin-bottom: 17.5px;
+    }
+    .aboutintro h3 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 17.5px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    .seebox:before {
+        width: 104%;
+        height: 89%;
+        margin-left: -71%;
+        transform: rotate(-49deg) scale(1.65);
+    }
+    .seebox div {
+        padding: 37.5px 0 0 37.5px;
+    }
+    .seebox p {
+        margin-bottom: 25px;
+    }
+    .wherebox h2 {
+        min-height: 120px;
+    }
+    .twoimgpanel .panel1 .botcaps {
+        right: 30px;
+    }
+    .botcaps {
+        right: 30px;
+        bottom: 20px;
+    }
+    .touchpanel .col-md-8 {
+        width: 90%;
+    }
+    .touchpanel p {
+        margin-bottom: 20px;
+    }
+    .modal-dialog {
+        margin: 15vh auto;
+    }
+    .aboutintro h1 {
+        font-size: 35px;
+        line-height: 39px;
+        margin-bottom: 17.5px;
+    }
+    .aboutintro h3 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 17.5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .justimgbox .fullpanel {
+        min-height: calc(50vh - 60px);
+    }
+    .socialpanel img {
+        width: 40px;
+        margin-right: 20px;
+    }
+    .seebox:before {
+        width: 115%;
+        height: 95%;
+        margin-left: -70%;
+        transform: rotate(-50deg) scale(1.5);
+    }
+    .seebox div {
+        padding: 27.5px 0 0 27.5px;
+    }
+    .seebox p {
+        margin-bottom: 25px;
+    }
+    .wherepanel{
+        padding-top: 75px;
+        padding-bottom: 25px;
+    }
+    .wherebox, .trainbox {
+        padding-bottom: 30px;
+    }
+    .wherebox h2 {
+        min-height: 80px;
+    }
+    .wherepanel hr, .aboutintro hr {
+        margin-top: 45px;
+    }
+    .trainpanel {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    .trainpanel .buttype1, .touchpanel p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    /*.videotext {
+        margin-top: -32vh !important;
+        padding-bottom: 25vh;
+    }*/
+    .beyondpanel {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .twoimgpanel .panel2 {
+        padding-left: 0;
+        height: initial !important;
+        overflow: initial;
+    }
+    .twoimgpanel .panel2 img {
+        margin-top: initial !important;
+    }
+    .modal-dialog {
+        margin: calc( (100vh - 540px)/2 ) auto;
+    }
+    .aboutintro.justimgbox .fullpanel {
+        padding: 2vw 0 0 5vw;
+    }
+    .aboutintro .container div, .aboutdesc .singentry div.rightpan {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .aboutintro h1, .aboutintro h3 {
+        margin-bottom: 15px
+    }
+    .aboutintro.justimgbox .imgcontainer {
+        border-right: 15px #fff solid;
+    }
+    .aboutintro h1 {
+        font-size: 35px;
+        line-height: 39px;
+    }
+    .aboutintro h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .aboutintro p {
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 767px) {
+    .justimgbox {
+        padding: 15px;
+    }
+    .justimgbox .fullpanel {
+        min-height: 40vh;
+    }
+    .toppanel {
+        padding: 0;
+        /*text-align: center;*/
+    }
+    .toppanel h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+    }
+    .toppanel .fullpanel {
+        min-height: initial;
+        /*padding-top: 28vh;
+        padding-bottom: 30px;*/
+        padding: 19vh 30px 22vh;
+    }
+    .toppanel h1 {
+        text-shadow: 1px 1px 23px rgba(0, 0, 0, 0.59);
+        font-size: 38px;
+        line-height: 40px;
+    }
+    .toppanel h3 {
+        font-size: 17px;
+        line-height: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .socialpanel img {
+        width: 35px;
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    .seepanel {
+        text-align: center;
+        padding-top: 75px;
+    }
+    .seebox:before {
+        display: none;
+    }
+    .seebox div {
+        background: none;
+        padding: 0 15px 30px;
+    }
+    .headbord {
+        margin-bottom: 40px;
+        border-bottom-width: 3px;
+    }
+    .seepanel, .wherepanel {
+        padding-bottom: 20px;
+    }
+    .botcaps {
+        left: 0;
+        right: 0;
+        bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .botcaps p {
+        text-align: center;
+        text-shadow: 1px 1px 23px rgba(0, 0, 0, 0.59);
+    }
+    .wherepanel, .beyondpanel {
+        padding-top: 50px;
+        text-align: center;
+    }
+    .wherepanel .container, .beyondpanel .container, .aboutintro .container, .aboutdesc .container {
+        max-width: 375px;
+    }
+    .wherepanel hr, .aboutintro hr {
+        width: 138px;
+        margin: 0 auto 50px;
+    }
+    .wherebox {
+        padding: 0 15px 30px;
+    }
+    .wherebox h2 {
+        min-height: initial;
+    }
+    .wherebox h2, .beyondpanel .wherebox h3 {
+        margin-bottom: 0;
+    }
+    .wherebox h4 {
+        margin-top: 0;
+    }
+    .bigwhere .p1, .touchpanel p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .trainpanel {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .trainpanel h3, .trainbox {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .trainpanel .container .col-md-12.text-center {
+        text-align: left !important;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .trainpanel .buttype1 {
+        margin-top: 30px;
+        letter-spacing: 1.1px;
+        font-size: 12px;
+        padding: 12px 25px;
+        font-weight: 600;
+    }
+    .trainbox .p1 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .beyondpanel, .aboutdesc {
+        padding-bottom: 0;
+    }
+    .twoimgpanel .panel2 {
+        padding-left: 0;
+        height: initial !Important;
+        overflow: initial !Important;
+    }
+    .twoimgpanel img {
+        margin-top: 0 !important;
+    }
+    /*.videotext {
+        margin-top: -27vh !important;
+    }*/
+    .modal-dialog {
+        width: 90%;
+        margin: 24vh auto 0;
+    }
+    .modal-dialog #videoo {
+        max-height: 50vh !important;
+    }
+    .modal-content button {
+        top: 5px;
+        left: 0;
+        right: 0;
+        margin: -21vh auto;
+    }
+    .modal-backdrop {
+        background: #ff7861;
+        transition: opacity .5s linear;
+    }
+    .modal-backdrop.in {
+        opacity: 1;
+    }
+    .videotext img {
+        width: 40px;
+    }
+    .touchpanel, .aboutintro {
+        padding: 0;
+    }
+    .touchpanel .fullpanel {
+        padding: 50px 30px;
+    }
+    .touchpanel h1 {
+        margin-bottom: 20px;
+    }
+    .touchpanel .socialpanel img {
+        width: 45px;
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    .touchpanel p, #aboutpage .touchpanel p {
+        margin-bottom: 5px;
+    }
+    .aboutintro.justimgbox {
+        text-align: center;
+    }
+    .aboutintro.justimgbox .imgcontainer {
+        border-right: none;
+    }
+    .aboutintro h1 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    .aboutintro h3, .aboutintro p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .aboutintro h3, .aboutdesc .singentry p {
+        margin-bottom: 0;
+    }
+    .aboutintro.justimgbox .pinkbg {
+        background: none;
+    }
+    .aboutintro.justimgbox .fullpanel {
+        margin-top: -58px;
+        padding: 20px !important;
+        background: #ff7861;
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .aboutintro .container.padtb100, .aboutdesc {
+        padding-top: 50px;
+    }
+    .aboutintro .container div {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .aboutintro p {
+        margin-bottom: 30px;
+        line-height: 25px;
+    }
+    .aboutintro  #scalexs p:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+    .aboutintro .socialpanel {
+        padding-top: 10px;
+    }
+    #scalexs {
+        display: none;
+    }
+    .readmore {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    .readmore.dissed {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .readmore .buttype1, .readmore .buttype1:hover {
+        color: #ff7861;
+        border-color: #ff7861;
+    }
+    .aboutdesc .singentry div.rightpan {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .aboutdesc .singentry h4 {
+        margin-bottom: 15px;
+    }
+    /*.aboutdesc p i {
+        font-size: 12px;
+    }*/
+}
+
+@media (max-width: 534px) {    
+    .toppanel .fullpanel {
+        background-image: url(img/xs/toppanel.jpg);
+        background-position: top left;
+    }
+}
