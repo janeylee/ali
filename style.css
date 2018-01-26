@@ -563,6 +563,39 @@ body.modal-open {
     opacity: 1;
 }
 
+/* 404 Styling */
+.page404 .bannerbox .pinkbg {
+    min-height: 100vh;
+    padding: 30vh 75px;
+}
+.page404 .bannerbox .giffer {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.page404 .bannerbox .pinkbg.firstpink {
+    opacity: 0.2;
+}
+.page404 .bannerbox .pinkbg div {
+    padding-top: 30px;
+}
+.page404 .bannerbox .pinkbg div a {
+    color: #ff7861;
+}
+.page404 .bannerbox .pinkbg h1 {
+    font-size: 119px;
+    line-height: 140px;
+    margin: 0;
+}
+.page404 .bannerbox .pinkbg .buttype1 {
+    padding: 10px 20px;
+    background: #fff;
+}
+.page404 .bannerbox .pinkbg .buttype1:hover {
+    background: none;
+    color: #fff;
+}
+
 @media (min-width: 1200px) and (max-width: 1366px) {
     .container {
         width: 970px;
@@ -639,7 +672,7 @@ body.modal-open {
         min-height: 90px;
     }
     .container {
-        width: 880px;
+        width: 920px;
     }
     .modal-dialog {
         width: 80%;
@@ -784,6 +817,9 @@ body.modal-open {
     }
     .aboutintro p {
         line-height: 26px;
+    }
+    .page404 .bannerbox .greenbg {
+        padding: 36vh 50px;
     }
 }
 
@@ -1029,6 +1065,9 @@ body.modal-open {
     /*.aboutdesc p i {
         font-size: 12px;
     }*/
+    .page404 .bannerbox .pinkbg {
+        padding: 30vh 50px;
+    }
 }
 
 @media (max-width: 534px) {    
